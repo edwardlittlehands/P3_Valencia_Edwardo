@@ -9,26 +9,32 @@ font-family: Arial, sans-serif;
 color: #000000;
 line-height:1.6;
 
-}
-
-#homepage {
 	background-image: url(Images/midgar.jpg);
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
  background-color: #cccccc;
-	
+
 }
 
-#contactpage{
-	
+#aboutpage {
+	background-image:none;
+
+ background-color: #cccccc;
 }
 
-#aboutpage{
-	
+
+#contact-page {
+	background-color: #f4f4f4;
+	background-image:none;
+}
+/*
+#homepage {
+		background-color: #f4f4f4;
+	background-image:none;
 }
 
-
+*/
 header {
 	background-color: #1d214d;
 	padding:10px;
@@ -359,7 +365,7 @@ margin-top:0;
 padding-top:0;
 margin-bottom:1%;
 }
-#homepage {
+body {
 	
 background-image: url(Images/platemap.png);
 background-size:cover;
@@ -400,6 +406,15 @@ body
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
+
+#aboutpage {
+	background-image:none;
+
+ background: #232323;
+}
+
+
+
 
 main {
   width: 320px;
