@@ -8,12 +8,26 @@ body {
 font-family: Arial, sans-serif;
 color: #000000;
 line-height:1.6;
-background-image: url(Images/midgar.jpg);
+
+}
+
+#homepage {
+	background-image: url(Images/midgar.jpg);
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
  background-color: #cccccc;
+	
 }
+
+#contactpage{
+	
+}
+
+#aboutpage{
+	
+}
+
 
 header {
 	background-color: #1d214d;
@@ -345,7 +359,7 @@ margin-top:0;
 padding-top:0;
 margin-bottom:1%;
 }
-body {
+#homepage {
 	
 background-image: url(Images/platemap.png);
 background-size:cover;
