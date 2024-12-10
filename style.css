@@ -26,6 +26,8 @@ background-repeat:no-repeat;
 #contact-page {
 	background-color: #ffffff;
 	background-image:none;
+	margin:0;
+	padding:0;
 }
 .callus{
 	background-color:white;
@@ -190,6 +192,9 @@ header nav ul li a {
 	text-decoration:none;
 	padding:5px 10px;
 }
+nav a:hover {
+	color:red;
+}
 
 .nav-button {
 	display:inline-block;
@@ -263,7 +268,7 @@ section.content.tank figure {
 	text-align:center;
 }
 section.content.tank figure img {
-	max-width: 250px;
+	max-width: 300px;
 	width:auto;
 	height:auto;
 	margin-bottom: 5px;
@@ -281,7 +286,7 @@ section.content.soldier figure {
 
 
 section.content figure img {
-	max-width: 250px;
+	max-width: 300px;
 	min-width:20%;
 	width:100%;
 	height: auto;
@@ -530,13 +535,24 @@ width:100%;
 	height:auto;
 	margin:0 auto;
 }
-.callus {
+.callus, #contactform {
 width:100%;
+max-width:100%;
+padding:20px;
+
 }
-#contactform {
-	width:100%;
+#contactform{
 	padding:15px;
 	font-size:1rem;
+}
+
+.callus{
+	font-size:2rem;
+}
+
+.contactformcontainer {
+	width:100%;
+	margin:0 auto;
 }
 
 
@@ -550,10 +566,7 @@ width:100%;
 	font-size:3rem;
 	margin-top:50px;
 }
-#contactform input[type="radio"]{
-	display:inline-block;
-	margin-right:10px;
-}
+
 #contactform input, #contactform textarea {
 	width:100%;
 }
@@ -618,9 +631,19 @@ body
 .contact-image img {
 	max-width:200px;
 	}
+
 .callus {
 	width:90%;
-	margin: 0 auto;
+
+	margin: 20px auto;
+
+}
+
+#contactform {
+	width:250%;
+	padding:15px;
+	font-size:1rem;
+	clear:both;
 }
 
 .callus h1 {
@@ -646,9 +669,13 @@ p {
   line-height: 28px;
 }
 
+
 * {
   scroll-behavior: smooth;
 }
+
+
+
 
 
 
