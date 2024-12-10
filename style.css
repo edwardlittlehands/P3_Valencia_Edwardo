@@ -36,6 +36,7 @@ background-repeat:no-repeat;
 	padding:20px;
 	margin:20px auto;
 	max-width:600px;
+	flex:1;
 }
 .callus h1 {
 	font-size:5rem;
@@ -58,11 +59,11 @@ background-repeat:no-repeat;
 #contact {
 	display: flex;
 	justify-content: center;
-	align-items:center;
+	align-items:flex-start;
 	gap:20px;
-	margin: 2rem auto;
-	max-width: 80%;
-	position:relative;
+	margin:0;
+	max-width: 100%;
+	flex-wrap: wrap-reverse;
 }
 
 #contactform {
@@ -70,6 +71,7 @@ background-repeat:no-repeat;
 	padding:20px 40px;
 	margin-top:20px;
 	width:100%;
+	max-width:600px;
 	color:white;
 	font-family: 'lato', sans-serif;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -104,6 +106,14 @@ background-repeat:no-repeat;
 {
 	margin-right:10px;
 }
+
+#contactform .radiogroup {
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;
+	width:100%;
+}
+
 #contactform input[type="submit"] {
 	background-color: orange;
 	color:white;
@@ -123,12 +133,32 @@ background-repeat:no-repeat;
 }
 
 
-.contact-image {
-	position:absolute;
-	bottom:20px;
-	left:20px;
+
+#imgflorsit{
+	width:40%;
+}
+#imgflorist img{
+	width:100%;
+	max-width:446px;
+	height:auto;
+	padding:8px;
+	margin-top:20px;
+	border: 4px solid pink;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+
+.contact-image {
+width:30%;
+}
+.contact-image figure img {
+	width:100%;
+	max-width:446px;
+	height:auto;
+	padding:8px;
+	margin-top:20px;
+
+}
 
 
 
@@ -150,6 +180,7 @@ header nav ul {
 	list-style:none;
 	display:flex;
 	justify-content:left;
+	margin:0;
 }
 header nav ul li {
 	margin: 0 10px;
@@ -480,7 +511,55 @@ background-repeat:no-repeat;
  background-color: #cccccc;
 }
 
+
+
+#contact {
+	flex-direction:column;
+	align-items:center;
+
 }
+
+.contact-image {
+	order: -1;
+width:100%;
+	text-align:center;
+}
+.contact-image figure img {
+	max-width:150px;
+	width:100%;
+	height:auto;
+	margin:0 auto;
+}
+.callus {
+width:100%;
+}
+#contactform {
+	width:100%;
+	padding:15px;
+	font-size:1rem;
+}
+
+
+
+.callus h1 {
+	font-size:4rem;
+	margin-bottom:50px;
+}
+
+.callus p {
+	font-size:3rem;
+	margin-top:50px;
+}
+#contactform input[type="radio"]{
+	display:inline-block;
+	margin-right:10px;
+}
+#contactform input, #contactform textarea {
+	width:100%;
+}
+
+}
+
 
 
 @media (max-width: 480px) {
@@ -519,6 +598,40 @@ body
  background: #232323;
 }
 
+#contact {
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+.contact-image {
+	order: -1;
+	position:static;
+	margin-bottom:5px;
+	text-align:center;
+}
+.contact-image figure img {
+	max-width:400px;
+	height:auto;
+}
+
+.contact-image img {
+	max-width:200px;
+	}
+.callus {
+	width:90%;
+	margin: 0 auto;
+}
+
+.callus h1 {
+	font-size:2rem;
+	margin-bottom:50px;
+}
+
+.callus p {
+	font-size:1.5rem;
+	margin-top:50px;
+}
 
 
 
